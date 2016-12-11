@@ -83,3 +83,5 @@ while IFS=$';' read -r -a VIA; do
 done < $TMPDIR/CARRERER.csv
 
 echo '</osm>' >> $OUT_FILE
+
+cp $OUT_FILE $ORIG_PWD/ && echo "Creado el archivo $ORIG_PWD/$OUT_FILE :)"
